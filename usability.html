@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Usability</title>
+
+    <link rel="stylesheet" href="empiristyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="empiri.html"> Empiri</a>
+          <a href="usability.html">Usability</a>
+          <a href="ophavsret.html">Ophavsret</a>
+          
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+         <a href="empiri.html"> Empiri</a>
+          <a href="usability.html">Usability</a>
+          <a href="ophavsret.html">Ophavsret</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+   <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+     <section id="felt1">
+
+       
+       <h3>Hvad er usability? </h3>
+       
+       
+     <p>Hvis man oversætter usability, betyder ordet anvendelighed. Begrebet bruges i teknologiens verden for at definere brugbarheden af et produkt. Usability handler om at gøre produktet så brugbart som muligt. Fx  når man bruger en opvaskemaskine ved man  hvad man skal trykke på. Det er fordi under produktionen af opvaskemaskinen var der nogen der tænkte på usability. </p>  
+         
+    <h3>Forklar pilottest</h3>
+         
+         <p>En test af en test. Når man skal have noget testet igennem, skal man selv afprøve testen først, så man er sikker på at den virker som den skal. På den måde undgår man fejl under selve testen. F.eks. Skal en pilot igennem en prøve før at han kan kommer op og prøve at flyve. </p>
+       
+       
+     <h3>Hvad er et undersøgelsesdesign</h3>  
+         
+         <p>Tænk på et design af en undersøgelse. Hvis man skal lave en test eller en undersøgelse, skal man finde ud af hvad for en test man vil bruge og hvordan. Så man bygger selve testen op, altså man designer den. Der er mange ting man kan teste på et produkt, så man skal vælge hvilken del af produktet man vil teste, hvad der er den bedste måde at teste det på og hvad der skal forberedes til testen. Hvis man vil teste motoren af sin traktor, skal man ikke tjekke lufttryk i dækket. Ligeledes skal man ikke forberede sig ved at gøre indersiden af førerhuset rent. </p>
+       
+       
+    <h3>Hvad er en gangstertest</h3>   
+       
+     <p>En test  af navigationen på en hjemmeside, altså kan man finde rundt, kan man nemt finde ud af hvor man er og hvordan man kommer derhen man vil hen. Navnet kommer fra at man skal forestille sig at være lukket inde i et baggagerum, ligesom i en gangsterfilm. Man bliver sat af et fremmed sted og man skal nu selv prøve at finde rundt. Man kigger rundt et vejnavne og andet for at kunne finde rundt, man gør det samme på en hjemmeside.  
+ 
+</p>  
+       
+    <h3>Hvordan hænger usability-test sammen med ressourceforbrug</h3>   
+       
+     <p>I et it-projekt bliver der brugt flere ressourcer jo længere man kommer ind i projektet, derfor er det træls at finde ud af at man har planlagt noget forkert fra starten og man skal bruge meget tid og ressourcer på at lave noget om når man næsten er færdig. Derfor er det godt at teste anvendeligheden igennem fra starten af, så man er sikker på man ikke står med et næsten færdig produkt som ikke virker som det skal.
+         <p>F.eks. Hvis man vil lave et blomsterbed i haven, men starter med at planlægge hvilke blomster man vil have, hvordan de skal stå i forhold til hinanden osv. Hvis man så skal til at plante nogle af de sidste blomster og finder ud af at der ikke er plads til alle blomsterne skal man til at plante hele bedet om igen. Hvis man i stedet havde startet med at sætte blomsterne op, uden at plante dem, så man kunne teste om de alle kunne være der, var det problem undgået og man skulle ikke bruge ekstra tid eller kræfter på at plante om. </p>  
+       
+      <h3>Hvorfor usability altid indgår i en kontekst</h3> 
+       
+     <p>Grunden til at usability altid skal indgår i en kontekst, er da siden altid skal være anvendelig. Der menes med at man skulle kunne bruge siden selvom, man sidder på sin mobil telefon, sin bærbare computer eller sin stationær computer. Om det er der hjemme, i traktoren eller på sin arbejdsplads.  </p>  
+       
+     <h3>Hvad betyder funktionalitet</h3>  
+       
+       <p>Funktionalitet betyder at når man f.eks. Laver en hjemmeside, skal altid fungere, der menes at når klikker rundt på siden skal alt fungere, ellers bliver der hurtigt skabt misforståelser og brugerne laver fejl og søger andre steder hen.  F.eks. Hvis landmanden er ved at købe en ny ko, og der sker en fejl og han ender med at købe en hest i stedet for fordi at hjemmesiden ikke fungere rigtig. </p>
+       
+     <h3>Hvad er brugertilfredshed</h3>  
+       
+       <p>Brugertilfredsheden skal opnås gennem design og god brugervenlighed. Det handler om hjemmesiden  er inspirerende og lækker dvs. en følelsesmæssige oplivelse af hjemmesiden. </p>
+         
+         
+     <h3>Hvad er usability-kriterier til websites</h3>    
+         
+    <p>En website skal opfylde en række kriterier, for at fremstå  brugervenligt.  Den skal være effektiv, funktionelt og nemt at navigere i. Så brugeren ikke støder på udfordringer og forlader siden  i frustration, lige som man forlader en restaurant med dårlig betjening.</p>     
+         
+         
+     <h3>Hvilke testmetoder skal man anvende</h3>    
+    <p>Der er man forskellige testmetoder som er gode til at teste forskellige dele af en hjemmeside. Hvis man vil teste navigation og struktur, altså hvor nemt man kan finde rundt på hjemmesiden, kan man bruge gangstertest og kortsortering. 
+        <p>Hvis man vil teste funktionalitet, altså hvor godt det virker når man f.eks. Klikker rundt på siden, skal man bruge spørgeskema, ekspertvurdering og brugertest. Hvis man vil undersøge layout og opbygning, altså hvor godt det er sat op, kan man bruge gangstertest, ekspertvurdering og brugertest. 
+            <p>Hvis man vil teste tilgængelighed, altså hvor let det er for alle og folk med f.eks. Handicap at bruge siden, kan man bruge ekspertvurdering, brugertest og tilgængelighedstest.
+                <p>Forståelighed for brugere, altså at forstå dem der skal bruge sin hjemmeside, kan man bruge spørgeskema, kortsortering og brugertest. </p>     
+         
+         
+    <h3>Hvad er skitser og prototyper</h3>     
+         
+         
+      <p>Når man starter med at lave et produkt, starter man med at lave en skitse. En skitse er en ”tegning” af produktet, der kan sagtens være mange forskellige skitser, det gode ved en skitse er at den ikke nødvendigvis skal være pæn, man skal bare kunne se ideen i den. Når man så har besluttet sig for en skitse, er man klar til at lave det er hedder en prototype, en prototype er en model af produktet. F.eks. hvis traktoren skal havde nye dæk, starter man med at tegne(skitser) selv dækket, man tegner(skitser) måske forskellige dækmønstre. Efterfølgende laver man modeller på de forskellige dækmønstre, for at undersøge hvilket dæk mønster der er bedst. </p>   
+         
+   <h3>Hvorfor og hvordan dokumenteres resultater af tests</h3>      
+         
+     <p>Når man har lavet en test, skal man skabe en overblik over resultaterne af testen. Det kan både være for dig selv, så du nemt kan finde rundt i dine resultater, eller det kan være for en anden person som skal bruge dem. 
+         <p>Man kan dokumentere resultaterne på flere forskelige måder. Man kan gøre det som en model, en præsentation eller en rapport. Hvilken form der passer bedst kommer an på hvad den nyfundne viden skal bruges til. Hvis man har testet navigationen af siden, altså hvor nemt det er at finde rundt, og det skal bruges til at muligvis designe en ny måde at finde rundt på, skal man ikke lave en model og vise frem, for dem man viser den til skal selv lave et nyt design. Derudover skal man gøre det let for andre at forstå.  </p>    
+         
+         
+     <h3>Hvad er en ekspertvurdering</h3>    
+         
+      <p>En ekspertvurdering går ud på at finde de overordnede problemer med produktet. Ekspertvurderingen består af et kort resume med de overordnede problemer og en mere uddybende rapport, som beskriver de fejl der er fundet i produktet. </p>   
+         
+       </section>
+         
+       </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>               
+       
+       

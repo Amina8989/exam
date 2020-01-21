@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Webudvikling</title>
+
+    <link rel="stylesheet" href="phpstyle1.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="webudvikling.html"> Historie</a>
+          <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+        
+          <a href="webudvikling.html"> Historie</a>
+        <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    
+     <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <sektion id="felt1">
+           
+           <h2>Serversideskripting</h2> 
+    
+    
+            <p>Serversideskripting er en programmerings teknik, der kan køre software på serversiden. Dvs enhver scripting eller programmering, der kan køres på webserveren, kaldes server-side scripting. Dynamisk ændring af webstedets indhold, generering af svar på brugerens forespørgsler, adgang til databasen osv. udføres ved serverens ende.
+            <p>Klient-side scripting udføres for at generere en kode, der kan køre i klientenden (browser) uden behov for serversides behandling. Dybest set er disse typer scripts placeret i et HTML-dokument.</p>
+    
+    
+    </sektion>
+       
+           <sektion id="felt2">
+               
+               <h3>Inklude</h3>
+               
+            <p>En af serversideskripting sproge er PHP. En stor fordel ved brug af PHP i webudvikling er en ”include” funktion. Funktionen inkluderer filer ind i andre filer. Fx hvis man skal bruge den samme header,meny eller footer på hver side på websitet. Med PHP kan man skrive header i en separat HTML-fil kaldet header.html og få PHP 'medtage' indholdet af denne fil på hver anden side. De gør dette ved at skrive følgende kode, hvor de ønsker, at overskriften skal gå: </p>
+               
+               <p>&lt;?php include('header.html'); ?&gt;
+    
+                   
+                    </sektion>
+       
+       
+           <sektion id="felt3">
+                   
+                   
+                <p>Følgnde eksempel vil vise hvordan man gør i praksis. I opgaven nedenuder har man lavet 4 html-sider, der har den samme meny.</p>
+    
+    
+    
+            <div id="phpbilled">
+           
+           <img src="kodephp1.png" alt="php" height="400" class="responsive">
+           
+            </div>   
+               
+               <p>Sådan ser siderne ud:</p>
+    
+    
+    <div id="phpbilled">
+           
+           <img src="php2.png" alt="php" height="300" class="responsive">
+           
+    </div> 
+               
+               
+         </sektion>
+       
+       
+           <sektion id="felt4">       
+               
+    
+    <p>Hvis man skal lave mange flere sider, med ens elementer, såsom meny, footer osv., så er det meget mere praktisk at gør brug af PHP include. I vores tilfalde gør vi følgende: </p>
+    
+    <ol>
+         <li>1.	Omdøber alle HTML-filer til php-filer (side1.php, side2.php…)</li>
+        <li>2.	Den stump kode med menuen klippes ud af en fil, og gemmes som menu.inc</li>
+        <li>3.	I stedet indsættes php-kode der indlæser (include) den stump kode der hvor den skal være.</li>
+      
+    </ol>
+               
+    
+   <div id="phpbilled">
+           
+           <img src="php5.png" alt="php" height="300" class="responsive">
+           
+    </div>  
+              
+               
+        <p>På den måde kan man spare sig tid og kræfter, når man laver store hjemmesider.</p>
+    
+    <div class="kilder">
+                <p>Kilde: ( præsentation af Niels Æstergaard 8/11.2019)
+<p>(https://techdifferences.com/difference-between-server-side-scripting-and-client-side-scripting.html)
+</p>
+        
+           </div>
+           
+           
+       </sektion>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

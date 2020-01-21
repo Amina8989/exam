@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Webudvikling</title>
+
+    <link rel="stylesheet" href="webstyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="webudvikling.html"> Historie</a>
+          <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+          <a href="webudvikling.html"> Historie</a>
+        <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <sektion id="felt1">
+           
+        <h2> Internettets historie</h2>
+           
+            <h3>Internettets historie</h3>
+           
+           
+           <p> 
+           
+               Internettets historie starter i begyndelsen af 60’erne. I det, at USA har opdagede Sovjetunionens missiler på Cuba, var der opstået en stærk behøv for alternative kommunikationsmuligheder. For radiobølgerne ville ikke kunne virke i tilfalde af atombombeangreb. Dette behøv har skubbet starten af udviklingen af det internet, vi kender i dag.
+I forsøg på at skabe de nye kommunikationsteknologier, har USA’s daværende regering besluttet at skabe ARPA, som står for Advanced Research Project Agency.  ARPA’s har ført til opfindelsen af den decentraliserede kommunikationsnetværk. Dvs. et netværk, der stædig vil virke, selv hvis nogle af parterne var ude af drift. Dette koncept var udarbejdet af en af ARPA’s forskere Poul Baran.
+I 1969 lykkedes det for første gang for forskere fra ARPA at lave en forbindelse mellem computere fra 4 forskellige universiteter. Dette har man kaldt for ARPANET og betegnes som forfader for internet. 
+Problemet ved ARPANET var at den var brugt af forskellige slags computere, som havde forskellige operationssystemer og dermed kunne ikke kommunikere med hinanden. 
+Der var behøv for et fælles sprog for alle computere og dette behøv har Tim Berners-Lee har dækket ved opfindelsen af HTML (hypertext markup language) og URL (universal resource locator). HTML kan kreere tekstdokumenter og hyperlinks. Imens browseren indlæser og gengiver den korrekte udseende af dokumentet. Browserens anden opgave er at finde og forbinde de informationer, som man leder efter. Dette betyder, at hvert enkelt dokument har brug for sin unikke adresse, så den kan blive fundet af browseren. Denne unikke adresse er URL.  URL starter med www, som står for World Wide Web.
+    
+           </p>
+       
+      </sektion>
+       
+   <sektion id="felt2"> 
+       
+       <h3>World Wide Web </h3>
+       
+       <p>
+        Den første internets muligheder var begrænsede i forhold til det internet vi kender nu. Internettet havde en lineære struktur. Man kunne sammenligne den med et træ med mange blader på. Hvis man skulle får fat i et bestemt blad, skulle man kravle op træet, når den rigtige gren og tage bladet. Så skulle man hele vejen ned igen. 
+Denne struktur har Tim Berners-Lee lavet om på ved opfindelsen af HTML og URL og dermed hyperlinks. Ideen bag opfindelsen var at får computeren til at fungere som en menneskets hjerne. Computeren skulle have evnen til at associere. Fra nu af var det det muligt at få fat et blad uden at kravle op på træet, men med en enkelt klik med mus. </p>
+           
+       <p>Hvad er inter-net?</p>
+<p>Kommunikation mellem afsender og modtager, hvor kommunikation er decentraliseret.</p>
+       
+       <p>Hvad er en protokol?</p>
+<p>Protokol er en standard, som muliggør kommunikation mellem servere.</p>
+       
+       </sektion>
+       
+
+        <sektion id="felt3"> 
+       
+       <h3>Webbets udvikling</h3>
+       
+       <p>Webbets udvikling er kendetegnet ved 5 perioder.</p>
+       
+       <p class="overskrift"> 1.	Tidlige eksperimenter (fra 1993).</p>
+       
+       <p>Teknik: HTML, JavaScript, GIF.</p>
+<p>Genrer: teksbaserede informationssites, officielle præsentationssites, kunstnerisk orienterede designeksperimenter.</p>
+<p>Typisk internetforbindelse: universitetets.</p>
+<p>Navigaton: Linklister.</p>
+<p>Central udvikling: NCSA Mosaik og Netskape browsere.</p>
+<p>Mest irriterende designelement: BLINK tag.</p>
+<p>Indsamling af data: Ingen.</p>
+<p>Stilarter: Klassisk bogsideformat.</p>
+
+       
+       <p class="overskrift">2.Under konstruktion (fra 1996) </p>
+            
+       <p>Teknik: JPG, Flash, tabeller, farmes, Photoshop grafik.
+<p>Genrer: privat hjemmeside, webshop, webbureausite, ungdoms-og musikportal, brandingsite.
+<p>Typisk internetforbindelse: modem, 14.440 bps.
+<p>Delingsmetode: web directories.
+<p>Central udvikling: slag mellem Siegel (design) og Nielsen (usability).
+<p>Mest irriterende designelement: frames.
+<p>Reklamer: bannerreklame, pop-up-vindue.
+<p>Indsamling af data: Spørgeskemaer.
+<p>Stilarter: efterligning af den virkelig verden, visuelle metaforer, grafisk postmodernisme.
+</p>
+       
+   <p class="overskrift">3.Semantisk søgning (fra 2000) </p>    
+       
+       <p>Teknik: CSS og CMS.
+<p>Genrer: søgemaskineoptimerede sites, blogs.
+<p>Typisk internetforbindelse: ADSL, 2Mbps.
+<p>Delingsmetode: e-mail.
+<p>Central udvikling: Google.
+<p>Mest irriterende designelement: skins.
+<p>Reklamer: Google adwords.
+<p>Indsamling af data: cookies.
+<p>Stilarter: firkantet modernisme, pixel-art.
+</p>
+      
+      <p class="overskrift"> 4.Sociale netværk (fra 2003 til 2010) </p>
+            
+       <p>Teknik: Hashtag og remix.
+<p>Genrer: professionelle og private netværkssites, video/musikdeling.
+<p>Typisk internetforbindelse: ADSL, 2Mbps.
+<p>Delingsmetode: tagging, den lange hale.
+<p>Central udvikling: social networking sites.
+<p>Mest irriterende designelement: Internet Explorer 6.0.
+<p>Reklamer: Google adsense, facebook.
+<p>Indsamling af data: socialt login.
+<p>Stil: Funktionalisme, den glæde amatør, kawaii.</p>
+            
+            
+       <p class="overskrift">5.Det mobile web (fra 2010) </p>
+       
+       <p>Teknik: GPS, berøringsfølsom skærm.
+<p>Genrer: kort, streaming, lokative medier.
+<p>Typisk internetforbindelse: 3G mobil.
+<p>Delingsmetode: posting.
+<p>Central udvikling: apps.
+<p>Mest irriterende designelement: socialt login.
+<p>Reklamer: touchpoints  og the custumer gourney.
+<p>Indsamling af data: Big data.
+<p>Stil: Skeumorphisme, Windows metro.
+</p>
+    
+           </sektion>  
+       
+            <sektion id="felt4">
+            
+       <h3>Serverbegrebet</h3>
+                
+                <img src="server.jpg" alt="specificiti order" height="400" width="500" class="responsive"> 
+                
+                
+    <p>Hele internettet er baseret på Client-Server analogien. Personlig computer virker som en client, da den forespørger serveren om en bestemt indhold. Hvis klientens forespørgsel kan ikke gennemføres, angiver serveren en fejl, som antyder på at serveren ikke har den indehold, som der bliver anmodet om.
+<p>Der findes forskellige slags servere. Fx en hardware web-server kan indeholde flere software servere. En webserver leverer websider via http-protokollen. Databaseserver modtager data fra og leverer data til webserver og andre klienter. FTP-server udveksler filer til anvendelse på webserver.
+</p>
+       
+                
+                 <div class="kilder"><p>(Kilde:https://www.youtube.com/watch?v=9hIQjrMHTv4&t=332s</p>
+       <p>https://www.youtube.com/watch?time_continue=7&v=j4cN_q3NX9c&feature=emb_title</p>
+       
+       <p>https://www.youtube.com/watch?time_continue=1&v=SwLdKeC8scE&feature=emb_title)</p></div>  
+    
+    </sektion>   
+                   
+                
+       
+    </section> <!--Mit grid-->
+       
+       
+       
+   <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer> 
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       

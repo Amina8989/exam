@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Læringsportfolio</title>
+
+    <link rel="stylesheet" href="style3.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content">
+         
+        <h1> <a href="index.html">Læringsportfolio</a> </h1>
+      
+      <section class="links">
+          
+          <a href="webudvikling.html">Webudvikling</a>
+          <a href="empiri.html">Kommunikation</a>
+          <a href="farver.html">Design</a>
+          <a href="projekter.html">Projekter</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+          
+          <a href="webudvikling.html">Webudvikling</a>
+          <a href="empiri.html">Kommunikation</a>
+          <a href="farver.html">Design</a>
+          <a href="projekter.html">Projekter</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    <!--Mit grid-->
+    
+
+   <section class="mitgrid">
+       
+       
+       <!--Sektion webudvikling er delt ud til 3 områder i en ny grid-->
+       
+       
+            <div class="webudvikling">
+                
+                <span id="omrode1">1</span>
+                
+                <div id="tekstweb">
+                     
+                     <a href="webudvikling.html">Webudvikling</a>
+                
+                </div>
+                    
+                <span id="omrode2">2</span>
+                
+            </div>
+       
+       
+       
+        <!--Sektion design er delt op til flere områder i en ny grid-->
+       
+       
+            
+        <div class="design">
+                
+                <div id="a"> 
+                    <span>1</span>
+                </div>
+                
+                <div id="b">
+                    <span>2</span>
+                </div>
+                
+                <div id="c">
+                    <span>3</span>
+                </div>
+                
+                <div id="d">
+                    <span>4</span>
+                </div>
+                
+                <div id="e">
+                    <a href="farver.html">Design
+            </a>
+            
+            </div>
+                
+                <div id="f">
+                    <span>6</span>
+                </div>
+                
+                <div id="g">
+                    <span>7</span>
+                </div>
+                
+                <div id="h">
+                    <span>8</span>
+                </div>
+                
+                <div id="i">
+                
+                    <span>9</span>
+                    
+                </div>
+                
+                <div id="g">
+                    <span>10</span>
+                </div>
+                
+                <div id="k">
+                    <span>11</span>
+                </div>
+                
+                <div id="l">
+                    <span>12</span>
+                </div>
+                
+                <div id="m">
+                    <span>13</span>
+                </div>
+                
+                <div id="n">
+                    <span>14</span>
+                </div>
+            
+                <div id="o">
+                    <span>15</span>
+                </div>
+            
+                <div id="p">
+                    <span>16</span>
+                </div>
+                
+         </div>
+       
+       
+       
+       
+        <!--Sektion kommunikation er delt ud til 3 områder i en ny grid-->
+       
+       
+            
+        <div class="kommunikation">
+            
+            <span id="omrode3">3</span>
+       
+            <div id="komtekst">
+                
+                <a href="empiri.html">Kommunikation</a> </div>
+            
+            <span id="omrode4">4</span>
+       
+       </div>
+       
+       
+       <!--Sektion eksamrnsprojekt-->
+       
+            
+        <div class="eksamensprojekt">
+            
+                <span id="omrode5">5</span>
+                
+                <div id="eksamtekst">
+                    
+                    <a href="projekter.html">Projekter</a>
+                
+                </div>
+            
+                <span id="omrode6">6</span>
+                
+        </div>
+                  
+</section>
+             
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>
+    
+    
+    
+</html>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Design</title>
+
+    <link rel="stylesheet" href="farverstyle1.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="Informationsark.html">Informationsarkitektur</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+           <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="Informationsark.html">Informationsarkitektur</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+   <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <section id="felt1">
+           
+        <h2> Farvepsykologi</h2>  
+    
+   <p>Farvene påvirker mennesker både fysisk og følelesemæssigt. Forskningen viser, at røde farve stimulerer vores nervesystem, sådan at hjertebanken øjes. Omvendt grønne og blå farver er med til at danne rå og påvirker mennesker på en afslappende måde. Derfor er farver vigtige, når det handler om at påvirke menneskers holdning til et produkt.
+<p>Samtidligt er den måde farvene bliver opfattet på og hvilke associationer man har i forhold til en bestemt farve, er meget subjektivt. Hvad vi synes om farven afhænger af forskellige følelsesmæssige, fysiske og kulturelle faktorer. Derfor er det svært at opstille en præcis formel, som udregner farvernes påvirkning på mennesker. Farvepsykologi bygger på et forslag på, hvordan farverne påvirker mennesker fra de vestlige kulture. 
+</p> 
+    
+  <h3>Blå</h3> 
+           
+    <p>Blå farver bruges dobbelt så meget, som andre farver på nettet på en global plan. Hos de store internationale selskaber er blå farve dominerende i deres valg af design. Fx Facebook, Twitter og LinkedIn bruger blå farve som en gennemgående farve og dette er der en god forklaring på. Blå farve associeres med ro, afslapning, troværdighed og sikkerhed. Dette egenskaber gør blå farve til en ynglings farve hos de fleste mænd og kvinder i den vestlig kultur og dermed til et sikkert valg hos de store virksomheder.</p>
+           
+    
+
+<h3>Rød</h3>
+           
+    <p>Rød farve tiltrækker opmærksomhed og betragtes som en aggressive farve. Den associeres med fare og aggression, men også med passion og kærlighed. </p>
+    
+<h3>Gul</h3>    
+    
+  <p>Gul associeres med glæde og optimisme men også er farven for jalousi og svigt.</p>  
+           
+<h3>Grøn</h3>    
+    
+  <p>Grøn associeres med natur og bæredygtighed, vækst og fornyelse. Men grøn er også farven for misundelse.</p>
+    
+<h3>Lilla</h3> 
+           
+  <p>Associeres med kreativitet og også med magt og luksus. Grunden er at i oldtiden var det ekstremt svært at skaffe et lilla pigment fra snegle og skaldyr, derfor var lilla farve kostbar og dermed tilhørte kun til de rige.</p>
+    
+ <h3>Orange</h3> 
+           
+    <p>Orange skaber en uformel stemning og associeres med energi og ungdom.</p>
+    
+ <h3>Farvesammensætning</h3> 
+           
+     <p>Alle mennesker har deres sanser, som hjælper dem med at opleve farver. Dette gør at mennesker oplever farverne forskelligt. Dvs. hvis en farvesammensætning opleves som smukt for en person, er det måske ikke smukt for anden. Derfor skal man stole sine egne sanser, når man sammensætter farver til sin interface.</p>
+           
+           </section>
+       
+       
+       <section id=felt2>
+           
+    
+  <h3>Komplementær farver</h3>  
+    
+  <p>Farver, der står direkte over for hinanden i farvecirklen.</p>  
+           
+           <div id="farverbilled">
+           
+           <img src="komplement..png" alt="php" height="400" class="responsive">
+           
+            </div>  
+           
+           
+    </section>    
+    
+     
+     <section id=felt3>
+       
+    
+ <h3>Analoge farver</h3>   
+           
+   <p>Nabøer i farvecirklen</p>
+                      
+    <div id="farverbilled">
+           
+           <img src="analog..png" alt="php" height="400" class="responsive">
+           
+    </div>        
+
+      
+    </section>
+         
+    
+       <section id=felt4>
+       
+       
+  <h3>Triadiske farver</h3>  
+           
+    <p>Farver, der ligger med en lige stor afstand fra hinanden i farvecirklen.</p>
+    
+    
+    <div id="farverbilled">
+           
+           <img src="triade..png" alt="php" height="400" class="responsive">
+           
+    </div> 
+
+       
+    
+  <h3>Monokrome farver</h3>         
+           
+  <p>En kulør, som justeres ifht. lyshed og mætning. Den går nærmest fra hvid til sort i nuancer af samme farve.</p>  
+           
+   <div id="farverbilled">
+           
+           <img src="mono..png" alt="php" height="400" class="responsive">
+           
+    </div>   
+           
+  <h3>Tetriadiske farver</h3> 
+   
+    <p>Fire farver, som er komplementære.</p>
+           
+           
+      <div id="farverbilled">
+           
+           <img src="tetri..png" alt="php" height="300" class="responsive">
+           
+    </div>       
+           
+     <h3>Split komplementære farver</h3> 
+        
+    <p>Farver der ligger oven for hinanden, men befinder sig i bredere spektrum.</p>
+           
+    <div id="farverbilled">
+           
+           <img src="split..png" alt="php" height="400" class="responsive">
+           
+    </div>   
+       
+           </section>
+       
+       <section id=felt5>
+       
+           
+     <h3>RGB og SMYK</h3>      
+           
+   <p>RGB står for Red Green og Blue og det er et farvesystem, der bruges til fremvisning på skærmen fx websider. Det er en additiv farvesystem, som betyder at man tilfører forskellige mængder lys til pixels, for at opnår et bestemt farve.
+SMYK står for Cyan Magenda Yellow Key (sort). Dette er en subtraktivt farvesystem, som benyttes til tryksager. Farverne dannes ved at trække lyset ud.
+</p> 
+    
+           
+  <div class="kilder">
+                <p>(Kilder: ”Interfacedesign. Fra ide til digital prototype”, Rold Morten, 1.udgave 2019.  ; <p>Præsentation fra 2/10 2019 af Carsten Kjeldsen Bogner)
+</p>
+        
+           </div>
+           
+           
+       </section>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+    

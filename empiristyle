@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;      
+    }
+
+body{
+    display:grid;
+    min-height: 100vh;
+    font-family: fantasy,sans-serif;
+    
+}
+
+a {
+    text-decoration:none;
+    color:white;
+    letter-spacing: 2px;
+}
+
+a hover{
+    color: #cac3c3;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: minmax(min-content,100px) min-content;
+}
+
+nav .content{
+    background-color: black;
+    display:grid;
+    place-items:center;
+    grid-auto-flow: column;
+    align-content: space-evenly; /*Plaserer elementerne i navigationsbaren på en måde, at de ligger lige væk fra hinanden*/
+    
+}
+
+nav .content .menu {
+     display: none; /*menyen vises ikke, når skærmen er stor.*/
+}
+
+
+nav .content .menu:hover {
+    color:white;
+    cursor: pointer;
+    user-select: none; /*for at undgår at menyen selekter, når man klikker på den*/
+    -webkit-user-select:none;
+    visibility: visible;
+}
+
+nav .content .links{
+    display:grid;
+    grid-gap: 20px;
+    place-items: center; /*plaserer content i midten af gridet*/
+    place-items:center;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(min-content,80px); /*gør indholdet mere responcive*/
+    
+}
+
+.menu{
+    color:white;
+}
+
+
+nav .dropdown {
+    display:none; /*Husk at stille display:grid; indtil man er helt færdig med dropdown mwnyen, så man kan se hvad man laver*/
+    background-color: black;
+    text-align: center;
+    
+}
+
+nav .dropdown a{
+    color: white;
+    padding: 40px;
+}
+
+nav .dropdown a:hover{
+    color:black;
+    background-color: #95A5A6;
+}
+
+body    {
+   
+    font-size: 1.2em;
+    background-color: white;
+    text-align: justify;
+
+}
+
+h1{
+    color: white;
+    letter-spacing: 3px;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+h2 {
+   font-family: sans-serif; 
+    text-align:justify;
+    padding:10px 10px;
+}
+
+h3 {
+    font-family: sans-serif;
+    padding: 20px 20px 20px 20px;
+}
+ul li {
+    font-family: sans-serif;
+}
+
+ol li {
+    font-family: sans-serif;
+}
+
+.kilder{
+    font-family: sans-serif;
+    color:#22B04C;
+    font-size: bold;
+    margin-top:50px;
+}
+
+.overskrift{
+    padding:10px;
+    font-weight: bold;
+}
+
+img {
+    margin:30px;
+}
+
+
+.responsive{
+   width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+#mitgrid{
+    display: grid;
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto auto auto;
+    grid-template-areas:
+        ". a a ."
+        ". b b ."
+        ". c c ."
+        ". d d ."
+        ". e e ."
+        
+}
+
+#felt1 {
+   grid-area: a;   
+    
+}
+
+
+#felt2 {
+   grid-area: b;
+}
+
+
+#felt3 {
+   grid-area: c;
+}
+
+
+#felt4 {
+   grid-area: d;
+}
+
+
+#felt5 {
+   grid-area: e;
+margin-bottom: 20px;
+}
+
+#footer{  
+    margin-top:20px;
+    text-align:left;
+    position: relative;
+    background-color: black;
+    height: 70px;
+    margin-top:auto;
+    width: 100%;
+  
+    }
+
+#footertekst{
+    color:white;
+    padding-top:25px;
+    margin-left:20px;
+    font-family:sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px) {
+    
+    nav .content .menu {display:initial;}
+    nav .content .links {display:none}
+}
+

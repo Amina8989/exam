@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Webudvikling</title>
+
+    <link rel="stylesheet" href="cssstyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="webudvikling.html"> Historie</a>
+          <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+          
+          <a href="webudvikling.html"> Historie</a>
+        <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+      <sektion id="felt1">
+           
+        <h2>CSS</h2>
+          
+      <p>Css står for Cascading Style Sheets. Det er et sprog, der beskriver en udseende af en HTML fil.
+    </p> 
+       
+   
+    <h3>Selektors</h3>
+          
+  <p class="overskrift">Color og background</p> 
+    
+    <p>Sådan ser det ud i praksis, hvis jeg vil lave om på baggrundsfarven på min side:</p>
+          
+    <p class="kode">body {background-color: #EEE;}</p>
+          
+    <p>Sådan gør man, hvis man vil style alle sine overskrifter i en farve:</p> 
+          
+    <p class="kode"> h1 {color: lightblue;}</p>
+        
+<p>Man kan også style baggrunden af sin side med et billede, i stedet for en farve:
+    
+          <p class="kode">body {background-image: url (”baggrundsbillede.jpeg”);}</p>
+          
+<p>Hvis billedet ikke er stort nok til at fylde hele det område du ønsker det skal fylde, kan du evt. gentage billede. Her har du følgende muligheder:</p>
+          
+          <p class="kode">background-repeat: repeat-x – (billedet gentages horisontalt)</p>
+          
+          <p class="kode">background-repeat: repeat-y – (billedet gentages vertikalt)</p>
+          
+          <p class="kode">background-repeat: repeat – (billedet gentages både horisontalt og vertikalt)</p>
+          
+          <p class="kode">background-repeat: no-repeat – (billedet gentages ikke)</p>
+          
+          <p>“Background-position:” bruges til at placere baggrundsbilledet på specifikke steder.</p>
+          
+<p class="kode">background-position: 2cm 2cm – (billedet positioneres 2 centimeter fra venstre og 2 cm nede på siden.)</p>
+          
+<p class="kode">background-position: 25% 50% - (billedet positioneres centreret og en fjerdedel nede på siden.)</p>
+          
+          <p class="kode">background-position: top right –(billedet positioneres øverst i højre hjørne)</p>
+          
+<p>Man kan også få den samme resultat med shorthand properties:</p>
+<p>background: [background-color] [background-image] [background-repeat] [background-position]
+Dvs. </p>
+          <p class="kode">background: #FFCC66 url("baggrundsbillede.jpeg") fixed right bottom;</p>
+
+          
+       </sektion>       
+          
+  
+       <sektion id="felt2">
+       
+          
+   <h3>Kaskaderegler</h3>    
+    
+    <p>Kaskaderegler er en vigtig del af CSS. Reglerne er vigtige at kunne for at undgår modstridelser i CSS-koden. Reglerne beskriver tre hovedprincipper i CSS:</p>
+    
+        <ol>
+          <li>1.	Inheritance (nedarvning).</li>
+            <li>2.	Cascading, dvs:
+                <ul>
+                   <li>•	Specificity</li> 
+                    <li>•	Source order</li>
+                    <li>•	Specificity har forrang mod source order</li>
+                </ul>
+            
+            </li>
+          
+          </ol>
+       
+     <p class="overskrift">Inheritance</p> <p>Her går det ud på at de egenskaber man har givet til ”parent” elementet gælder også for ”child” elementet.</p>
+       
+     <p class="overskrift">Specificity</p> <p>Denne regel bestemmer den måde, egenskaberne  påvirker  hinanden. Hvis to forskellige egenskaber påvirker et element, den der er mere specifikt vinder. Fx vi har h1 og class der påvirker et element. De egenskaber vi tildeler til class vil vinde over de egenskaber vi tildeler til h1. </p>  
+       <p>Dette kan man observere på den følgende exempel:</p>
+          
+        <img src="specificity.png" alt="specificiti order" height="400" width="500" class="responsive">   
+       
+       
+       <p class="overskrift">Sorce order</p> <p>Hvis man har 2 ens egenskaber, der påvirker det samme element, gælder den der er anvendt sidst.</p>
+          <p>Fx:</p>
+       
+       
+       <img src="source.png" alt="specificiti order" height="400" width="500" class="responsive">  
+       
+           
+           </sektion>
+           
+       
+       <sektion id="felt3">
+       
+       
+   <h3>Fonte</h3> 
+       
+       <p>Fonte bruges til at style tekste.</p>
+       
+       <p class="kode">p {
+    font-style: italic; - (Den unikke stil, teksten skal have.)</p>
+       
+       <p class="kode">font-weight: bold; - (Tykkelsen af teksten. Angives i tal fra 100-600.)</p>
+       
+       <p class="kode">font-size: 20px; - (Størrelsen af teksten, angives i pixels eller em.)</p>
+       
+       <p class="kode">    font-family: arial, sans-serif; - (Her angiver man den skrifttype man ønsker at anvende. Hvis man vælger at Google font, f.eks. Open Sans, så skal man huske at inkludere fonten i head tag. )
+           } </p>
+
+       <p>Shorthan properties:</p>
+       
+       <p class="kode">p { 
+    font: italic  bold  30px  arial, sans-serif}
+       </p>
+       
+       <h3>Tekst styling</h3>
+       
+       <p>Der findes flere egenskaber, der bruges til at style sin tekst på:</p>
+       
+       <p class="kode">p {</p>
+       <p class="kode">color: #4CAF50; - (angiver farven på teksten) </p>
+       <p class="kode">text-align: center; - (angiver tekstens placering)</p>
+       <p class="kode">text-transform: uppercase; - (alle bogstaver skal stå med stort)</p>
+       <p class="kode">text-indent: 50px; - (angiver en værdi for hvor langt vi vil indrykke den første linje i vores paragraf)</p>
+       <p class="kode">letter-spacing: 3px; - (angiver mellemrumme mellem bogstaverne)</p>
+       <p class="kode">text-decoration: none; - (bruges til at understrege, overstrege elle gennemstreje teksten)</p>
+       <p class="okode">}</p>
+       
+       <h3>Link styling og pseudo-class</h3>
+       
+       <p>Man kan style links alt efter hvilken stadie den befinder sig i. </p>
+       
+       
+       <p class="kode">a:link {</p>
+       <p class="kode">color: green; </p>
+       <p class="kode">} - (alle ubesøgte links skal have grøn farve).</p>
+       
+       <p class="kode">a:visited {</p>
+       <p class="kode">color: yellow;</p>
+       <p class="kode">} - (alle besøgte lins skal være gule)</p>
+       
+       <p class="kode">a:hover {</p>
+       <p class="kode">color: orange;</p>
+       <p class="kode">font-style: italic;</p>
+       <p class="kode">} – (angiver hvilke egenskaber, der skal gælde for links, som brugeren fører musen henover. I denne tilfalde bliver liket orange og med kursiv, når musen føres over).</p>
+       
+       <h3>Class</h3>
+       
+       <p>Class bruges til at style flere elementer, der skal have samme styling. Man sætter class på de elementer, der skal styles ens i sin HTML dokument og give dem et navn:</p>
+       
+       <p class="kodet">&lt;p class="tekstklasse">Tekst 1&lt;/p&gt;</p>
+       
+       <p class="kode">&lt;p&gt;Tekst 2&lt;/p&gt;
+       
+       <p class="kode">&lt;pclass="tekstklasse"&gt;Tekst 3 &lt;/p&gt;</p>
+       
+       <p>Derefter styler man i CSS-dokumentet:</p>
+       
+       <p class="kode">. tekstklasse {</p>
+       
+       <p class="kode">color: orange;</p>
+       
+       <p class="kode">font-style: italic;</p>
+       
+       <p class="kode">}</p>       
+       
+       <h3>Id</h3>
+       
+       <p>Hvis man vil ramme ét element og ikke andre, så skal man bruge id. En id styling kan kun bruges én gang. Så hvis man bruger den flere steder, vil browseren kun anvende den første gang den ser den i dit dokument. Derudover er id en ikke-semantiske tag, så man skal undgå at bruge den, så meget som muligt.</p>
+       
+       <p>I HTML- dokumentet giver man en id til den element, der skal styles for sig selv. </p>
+       
+       <p class="kode">&lt;h1&gt;Alm overskrift&lt;h1&gt;</p>
+       
+       <p class="kode">&lt;h1&gt;Alm overskrift&lt;h1&gt;</p>
+       
+       <p class="kode">&lt;h1 id="specieloverskrift"&gt;Speciel overskrift&lt;/h1&gt;</p>
+       
+       <p class="kode">&lt;h1&gt;Alm overskrift&lt;h1&gt;</p>
+       
+       <p>Derefter styler man i Css-en ved at angive en selekter med en hashtag.</p>
+       
+       <p class="kode">#specieloverskrift {</p>
+       
+       <p class="kode">font-size: 40px;</p>
+       
+       <p class="kode">}</p>
+       
+           
+           </sektion>
+           
+       
+       <sektion id="felt4">
+           
+       
+       <h3>Box-modellen</h3>
+       
+       <p>Box modellen forklarer hvordan margin og padding virker. Hvis du har en content, som er omringet af en border, så bruger man padding til at skabe plads fra content til selve rammen. For at skabe plads omkring rammen bruger man margin.</p>
+       
+       
+       <img src="boxmodel1.png" alt="boxmodel" height="400" width="500" class="responsive">
+       
+       <p class="overskrift">Content</p>
+       
+       <p>Fx en tekstinhold inde i en section.</p>
+       
+       <p class="overskrift">Padding</p>
+       
+       <p>Dette er afstanden fra et indhold og ud til inderkanten af et element. Inderkanten af elementet er starten på border.</p>
+       
+       <p class="overskrift">Border</p>
+       
+       <p>Border er kanten på et element. Denne kan også være forskellige tykkelser.</p>
+       
+       <p class="overskrift">Margin</p>
+       
+       <p>Margin starter ved ydrekanten af en border. Margin angiver luften omkring elementet. Det er margin som bestemmer afstanden/luften fra et element til et andet element.
+Den reelle bredde og højde på dit element afhænger altså af padding, border samt den angivne højde og bredde.
+</p>
+       
+           </sektion>
+           
+       <sektion id="felt5">
+           
+       <img src="margin.png" alt="margin" height="400" width="500" class="responsive">
+       
+       
+       
+       <p class="overskrift">Grids</p>
+       
+       <p>Ved opfindelsen af Grid er det blevet væsentlig nemmere at styre layoutet i CSS, for Grids deler layoutet i rækker og kolonner hvis fylde og beliggenhed er nemt at styre. </p>
+           
+           </sektion>
+       
+       
+       <sektion id="felt6">
+       
+       <p>Man starter ud med at lave en Grid kontainer html'en:</p>
+       
+       <img src="gridhtml.png" alt="gridhtml" height="400" width="500" class="responsive">
+       
+           </sektion>
+       
+           
+       <sektion id="felt7">
+       
+       
+        <img src="gridskode1.png" alt="gridcss" height="400" width="500" class="responsive">
+       
+       
+          </sektion>
+       
+           
+          <sektion id="felt8"> 
+       
+       
+       <p>Sådan ser det ud i browseren:</p>
+       
+        <img src="grids.png" alt="gridcss" height="400" width="500" class="responsive">
+       
+            </sektion>
+              
+              <sektion id="felt9"> 
+       
+       <p>Grid-template-columns og grid-template-rows angiver antal rækker og søjler en layout skal indeholde. De skal angives i fractions (fr). Man angiver felternes navne ved at sige grid-area.</p>
+             
+       
+        <img src="grids2.png" alt="gridcss" height="400" width="300" class="responsive">
+       
+                  </sektion>
+       
+       
+            <sektion id="felt10">
+                  
+                  
+       <p>Felternes placering i forhold til hinanden angives ved grid-template-areas:</p>
+        <p>Man kan angive hvor meget en felt skal fylde og bytte elementerne rundt omkring. I opgaven nedenunder kan man se at man kan angive hvor meget en enkelt felt skal fylde vha. grid-template-area.</p>
+                
+            </sektion>
+       
+       
+            <sektion id="felt11">
+       
+            
+       <img src="grids4.png" alt="gridcss" height="200" width="400" class="responsive">
+       
+       
+            </sektion>
+                
+            <sektion id="felt12">
+       
+       
+       <img src="grids5.png" alt="gridcss" height="200" width="400" class="responsive">
+       
+       
+            </sektion>
+                
+                <sektion id="felt13">
+                    
+       <p>På det næste eksempel kan man se hvordan man angiver forskellige højder på felterne og hvordan man bytter felterne rundt omkring. </p>
+       
+        <img src="grids6.png" alt="gridcss" height="200" width="500" class="responsive">
+       
+        
+       <p>Man skal være obs. på hvor meget ”rows” og ” columns” man laver. Man skal går ud fra den største antal felter man skal bruge.</p>
+       
+        <p>I opgaven nedenunder har vi øvet os på at opstille Grids på en anderledes måde. Det går ud på at man angiver grid-column-start og grid-column-end med henblik på at angive startlinjen og slutlinjen på sin felt. Det er rækkernes ydrelinjer man taler om.</p>
+       
+            </sektion>
+                
+            <sektion id="felt15">
+       
+       <img src="kodemorskode1.png" alt="gridcss" height="500" width="250" class="responsive">
+       
+       
+            </sektion>
+       
+       
+            <sektion id="felt16">
+            
+       <img src="kodemorskode2.png" alt="gridcss" height="500" width="250" class="responsive">
+       
+       
+            </sektion>
+            
+                <sektion id="felt17">
+       
+       
+       <img src="Umorskode.png" alt="gridcss" height="300" width="500" class="responsive">
+       
+       
+                </sektion>
+                    
+            <sektion id="felt18">
+       
+       <h3>Responsive layout</h3>
+       
+       <p>De moderne tendencer kræver, at man laver en layout, der passer til alle skærmstørrelser.</p> 
+       <p>Følgende opgave viser hvordan man skaber en responsive side, som ændres ved skift af størrelsen.</p>
+       
+       <img src="responsivekode.png" alt="responsive eksempel" height="300" width="500" class="responsive">
+       
+                </sektion>
+                
+       
+                <sektion id="felt19">
+                
+       <p>Sådan ser siden ud ved almindelig skærm.</p>
+       
+       <img src="responsive2.png" alt="responsive eksempel" height="300" width="500" class="responsive">
+                    
+                </sektion>
+       
+       
+                <sektion id="felt20">
+       
+       
+       <p>Sådan ser siden ud når skærmen er mindre end 700 pixels.</p>
+       
+       <img src="responsive1.png" alt="responsive eksempel" height="300" width="500" class="responsive">
+                    
+                    <div class="kilder">
+                        <p>(Kilde: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) </p>
+                    </div>
+       
+       </sektion>
+                    
+    </section> <!--Mit grid-->
+     
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer> 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Typografi</title>
+
+    <link rel="stylesheet" href="gestaltstyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="designthinking.html">Designthinking</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+          <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="designthinking.html">Designthinking</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+   <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <section id="felt1">
+           
+           
+        <h2>Gestaltlovene</h2> 
+           
+           <p>Gestaltlovene er forsøg på at forklare hvordan mennesker sanser og opfatter omgivelser. 
+<p>Brug af gestaltlove i webdesign skaber overblik for brugeren. De enkelte gestaltlove hjælper med at organisere informationer, så brugeren lettere kan overskue indholdet på siden.
+<p>Gestaltlovene sørger altså for at design og funktionalitet går hånd i hånd i stedet for at modarbejde hinanden.
+</p>
+           
+      <h3>De fem vigtige gestaltlove</h3>  
+           
+           <p>Loven om nærhed (Proximity). De elementer, der bliver plaseret tæt på hinanden vil blive opfattet som relateret til hinanden.</p>
+           
+           
+        <div id="gestaltbilled">
+           
+           <img src="proxsimity.png" alt="php" height="400" class="responsive">
+           
+            </div>     
+           
+     <p>Loven om lighed (Similarity). Elementer, der ser ens ud med fx farver, form eller størrelse vil blive opfattet som relateret til hinanden.</p>      
+         <div id="gestaltbilled">
+           
+           <img src="similarity.png" alt="php" height="400" class="responsive">
+           
+            </div>   
+           
+    <p>Loven om kontinuitet (continuity). Elementer, der plaseret på en måde, så de danner linjer eller kurve vil blive opfattet som relateret til hinanden.</p>
+           
+           
+           <div id="gestaltbilled">
+           
+           <img src="continuity.png" alt="php" height="300" class="responsive">
+           
+            </div>  
+           
+    <p>Loven om figurdannelse (Closure). Elementer, der er separate kan opfattes som en samlede figur, selvom figuren er ikke til stede.</p>       
+           
+           <div id="gestaltbilled">
+           
+           <img src="closure.png" alt="php" height="300" class="responsive">
+           
+            </div>  
+           
+           
+    <p>Loven om lukkethed (common region). Elementer, der er lukket ind i samme indramning, vil blive opfattet som relateret til hinanden.</p>       
+           
+        <div id="gestaltbilled">
+           
+           <img src="common.png" alt="php" height="300" class="responsive">
+           
+            </div>     
+         
+           
+     <div class="kilder">
+                <p>((Kilder: Interfacedesign, Rold Morten, 1 udgave 2019. ; 
+                    <p>https://www.usertesting.com/blog/gestalt-principles/)
+                </p>
+        
+           </div>
+           
+           
+       </section>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>           
+                
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           

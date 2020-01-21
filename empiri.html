@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Typografi</title>
+
+    <link rel="stylesheet" href="empiristyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="empiri.html"> Empiri</a>
+          <a href="usability.html">Usability</a>
+          <a href="ophavsret.html">Ophavsret</a>
+          
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+         <a href="empiri.html"> Empiri</a>
+          <a href="usability.html">Usability</a>
+          <a href="ophavsret.html">Ophavsret</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+   <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <section id="felt1">
+           
+           
+        <h2>Empiri</h2> 
+           
+     <h3>Hvad kendetegner den kvantitativ forskning.</h3>      
+           
+     <p>Den kvantitativ forskning bruges til at samle data ind, der består af fakta og tal. Denne struktureret og statistisk data er brugbart, når man skal trække generelle konklusioner fra sin undersøgelse. Som resultat af denne slags undersøgelser får man en meget bred data, som ikke er så svært at analysere, da den er meget overfladisk. Eksempler på kvantitativ undersøgelse er: målinger, statistik, spørgeskemaundersøgelser osv.</p>      
+           
+       <h3>Hvad kendetegner den kvalitativ forskning.</h3>    
+           
+        <p>Den kvalitativ forskning bruges til at samle en beskrivende data frem for rene tal. En kvalitativ undersøgelse er mindre struktureret. Den søger at gå i dybden med emnet og samle meninger og synspunkter. Denne måde at samle data på er mere ressourcekrævende, da den er dybdegående og dermed er svære at analysere. Eksempler på kvalitativ undersøgelse er: interview, observationer, litteraturstudier osv.
+<p>Interview er den mest praktiske måde at lave en kvalitativ undersøgelse. Den proces, hvor de mundtlige udtalelser skrives ned kaldes for transskription. Den næste skridt er at meningskondensere, dvs. at sammenfatte essensen af interviewedes udtalelser og evt. skrive de mest væsentlige citater ned.
+</p>   
+           
+   <h3>Hvad kan de to slags forskningsmetoder bruges til</h3>        
+           
+           
+   <p>Der er flere stadier, man skal igennem, inden man kommer i gang med sin undersøgelse. Man starter med at formulere sin hypotese, som senere skal bekræftes eller afkræftes. Kvalitative undersøgelser vil være behjælpelige i denne sammenhæng, da her er der muligheden til at undersøge de problemer og udfordringer der er omkring emnet.
+<p>Den næste skridt er validering af hypotesen. Her kan kvantitative undersøgelser blive behjælpelige med at samle tal ind for at validere hypotesen. På denne måde kan man undersøge om problemet var virkelig eller kun en opfattelse. De hårde tal, som man har samlet ind, giver muligheden til at tage en beslutning på en objektiv grundlag.
+<p>Den tredje stadie er at finde de generelle svar på din hypotese. På denne stadie har begge metoder deres svagheder og styrker. Den kvantitativ undersøgelse er bredt dækkende og besvarer nogle konkrete spørgsmål, dermed dækker undersøgelsen bredt. Fx kan man hurtigt og nemt finde ud af hvilken restaurant man foretrækker eller hvor tit man cykler på arbejde.
+<p>Derimod kan den kvalitativ undersøgelse hjælpe med at inddrage den menneskelig element ind i undersøgelsen. Kunderne har frit mulighed til at fortælle om deres oplevelse, dermed kan man blive klogere på sine mulige blinde punkter.
+<p>Den kvalitativ og kvantitative undersøgelser fungerer ret godt tilsammen. Et godt eksempel på denne balance er en kendt anmeldelses hjemmeside ”TRUSTPILOT.COM”. Hjemmesiden bruger både den kvantitativ undersøgelse, i det at man bliver bedt om at kategorisere oplevelsen ved at vælge stjerner. <p>Derefter har men muligheden til at sætte ord på sine oplevelser og argumentere for sin valg af antal stjerner. Det sidste nævnte er en kvalitativ undersøgelse. Grunden til hjemmesidens popularitet er at den inkluderer de to undersøgelser og dermed dækker bredt. 
+
+</p>        
+           
+  <div class="kilder">
+                <p>(Kilder: https://metodeguiden.au.dk/alfabetisk-oversigt/transskription/
+<p>https://da.surveymonkey.com/mp/quantitative-vs-qualitative-research/
+
+                </p>
+        
+           </div>
+           
+           
+       </section>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>               
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           

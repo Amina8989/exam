@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Webudvikling</title>
+
+    <link rel="stylesheet" href="htmlstyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="webudvikling.html"> Historie</a>
+          <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+        
+          <a href="webudvikling.html"> Historie</a>
+        <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    
+    <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <sektion id="felt1">
+           
+           <h2>HTML</h2>
+           
+           <div id="htmlbilled">
+           
+           <img src="html.jpg" alt="mindmap til html" height="600" class="responsive">
+           
+            </div>   
+               
+        <p>HTML står for Hypertext Markup Language. Det er et standard markup sprog til hjemmesider. Ved brug af HTML til opbygning af hjemmesider vil det det være oplagt at følge en vis orden eller gode skikke. 
+<p>I vores digitale verden er det mere og mere almindeligt at bruge søgemaskiner på internettet til at finde frem til de informationer, man har brug for. Derfor er det optimalt at man tilpasser hjemmesiden man bygger til søgemaskinen. Brug af semantiske tags for at markere de vigtige dele af hjemmesiden vil føre til en god søgemaskineoptimeret hjemmeside. 
+</p>
+           
+       </sektion>
+       
+           <sektion id="felt2">
+           
+    <h3>Mest anvendte semantiske tags i HTML:</h3>   
+           <p>&lt;header&gt;
+<p>&lt;nav&gt;
+<p>&lt;section&gt;
+<p>&lt;body&gt;
+<p>&lt;body&gt;
+<p>&lt;p&gt;
+<p>&lt;h1...h6&gt;
+<p>&lt;ol&gt;
+<p>&lt;ul&gt;
+<p>&lt;dl&gt;
+<p>&lt;dt&gt;
+<p>&lt;title&gt;
+           <p>&lt;footer&gt;</p>
+           
+           
+      <h3>Ikke semantiske tags er dem, der ikke fortæller til SEO om deres indhold:</h3>     
+           
+   <p>&lt;div&gt; 
+    <p>&lt;span&gt;</p>
+           
+    
+    <h3>Gode skikke ved kodning:</h3>
+            <ol>
+                <li>1.	Brug mest muligt semantiske tags.
+                </li>
+                <li>2.	Skab overblik først og kode næst.</li>
+                <li>3.	Indryk med tabulator.</li>
+                <li>4.	Kommentarer ved siden af koden for at skabe overblik til de andre, der skal læse koden.
+                </li>
+                <li>5.	Ved indsættelse af billedet angives enten width eller height i pixels, men ikke begge dele.</li>
+                <li> 6.	Undgå for store billeder, skal tilpasses inden de sættes ind.</li>
+           
+           
+           </ol>
+           
+       </sektion>
+               
+       <sektion id="felt3">
+       
+               
+       <h3>Links</h3>    
+           
+       <p>Man angiver interne og eksterne links forskelligt: </p>  
+           <ul>
+                <li>•	Interne: id, href #</li>
+               <li>•	Eksterne: anchor tag &lt;a + attributter&gt; og slutter med &lt;/a&gt; indholdet mellem delene bliver klikbart. 
+               </li>
+        
+           </ul>
+           
+    <img src="link.png" alt="linktag" height="150" width="500" class="responsive">       
+           
+       </sektion>   
+        
+           
+        <sektion id="felt4">
+           
+           
+         <p class="overskrift">Følgende øvelse viser hvordan man rent praktisk bruger link tags og image tags:</p>  
+           
+           <ul>
+            <li>•	Angives med <img> tag.</li>
+            <li>•	Selve filen udpeges med src-attribut.</li>
+            <li>•	Alternativ tekst-alt-attribut.</li>
+            <li>•	Højde og bredde angives i pixels.</li>
+            <li>•	Man skal undgå for store filer, de skal tilpasses før de bliver indsat.
+            </li>
+           
+           
+           </ul>
+           
+           
+       <p class="overskrift">Sådan ser koden ud:</p>   
+           
+           
+          <img src="html3.png" alt="øvelse-kode" height="400" width="500" class="responsive">  
+    
+            
+       </sektion>
+       
+       
+       <sektion id="felt5">
+        
+           <p class="overskrift">Sådan ser siden ud:</p>  
+           
+          <img src="html1.png" alt="øvelse-side" height="600" width="800" class="responsive">   
+           
+            <div class="kilder">
+                <p>(Kilde:præsentation af Niels Østergaard per 9/92019)(w3schools.com)</p>
+           </div>
+           
+           
+       </sektion>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer> 
+           
+    

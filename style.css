@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;      
+    }
+
+body{
+    font-family: fantasy,sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+a hover{
+    color: #cac3c3;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: minmax(min-content,100px) min-content;
+}
+
+nav .content{
+    background-color: #95A5A6 ;
+    display:grid;
+    place-items:center;
+    grid-auto-flow: column;
+    align-content: space-evenly; /*Plaserer elementerne i navigationsbaren på en måde, at de ligger lige væk fra hinanden*/
+    
+}
+
+nav .content .menu {
+     display: none; /*menyen vises ikke, når skærmen er stor.*/
+}
+
+
+nav .content .menu:hover {
+    filter: :opacity(50%);
+    cursor: pointer;
+    user-select: none; /*for at undgår at menyen selekter, når man klikker på den*/
+    -webkit-user-select:none;
+}
+
+nav .content .links{
+    display:grid;
+    grid-gap: 20px;
+    place-items: center; /*plaserer content i midten af gridet*/
+    place-items:center;
+    grid-auto-flow: column;
+    grid-auto-columns: minamax(min-content,80px); /*gør indholdet mere responcive*/
+}
+
+
+nav .dropdown {
+    display:none; /*Husk at stille display:grid; indtil man er helt færdig med dropdown mwnyen, så man kan se hvad man laver*/
+    background-color: #34495E;
+    text-align: center;
+    
+}
+
+nav .dropdown a{
+    color: white;
+    padding: 40px;
+}
+
+nav .dropdown a:hover{
+    color:aquamarine;
+    background-color: lightgrey;
+}
+
+
+
+
+/*Mit grid (mobile først)*/
+
+
+.mitgrid { 
+    
+    display: grid;
+    
+    grid-template-columns: repeat(8,2fr);
+        
+    grid-template-rows: repeat(4,2fr)
+        
+    }
+
+#webudvikling {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: aqua;
+    border:solid black 3px;
+    margin: 70px;
+    padding: 70px;
+}
+
+#design{
+    grid-column: 1/9;
+    grid-row: 2/3;
+    text-align: center;
+    border:solid black 3px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: aqua;
+    
+}
+
+#kommunikation{
+    grid-column: 1/9;
+    grid-row: 3/4;
+    text-align: center;
+    border:solid black 3px;
+   border-radius: 20px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+#eksamensprojekt{
+    grid-column: 1/9;
+    grid-row: 4/5;
+    text-align: center;
+    border:solid black 3px;
+   border-radius: 20px;
+    margin: 10px;
+    background-color: aqua;
+    
+}
+
+#footer{
+    grid-column: 1/9;
+    grid-row: 5/6;
+    text-align:left;
+    background-color: grey;
+    padding: 20px;
+    }
+
+
+/*Breakepoint desktop*/
+
+@media only screen and (min-width:600px){
+    .mitgrid { 
+    
+     display: grid;
+    
+    grid-template-columns: repeat(8,2fr);
+        
+    grid-template-rows: repeat(3,2fr)
+        
+    }
+
+#webudvikling {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+
+#design{
+    grid-column: 5/9;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+#kommunikation{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+#eksamensprojekt{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    
+}
+
+    #footer{
+    grid-column: 1/9;
+    grid-row: 3/4;
+    text-align:left;
+    background-color: grey;
+    padding: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px) {
+    
+    nav .content .menu {display:initial;}
+    nav .content .links {display:none}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

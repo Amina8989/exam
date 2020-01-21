@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Webudvikling</title>
+
+    <link rel="stylesheet" href="github.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="webudvikling.html"> Historie</a>
+          <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+        
+          <a href="webudvikling.html"> Historie</a>
+        <a href="omhtml.html">HTML</a>
+          <a href="omcss.html">CSS</a>
+          <a href="serversidescripting.html">Serversideskripting</a>
+          <a href="versionsstyring.html">Versionsstyring</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+    
+    <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <sektion id="felt1">
+           
+           <h2>Versionsstyring som et redskab</h2>
+           
+  <p>Versionsstyring er et godt redskab i forhold til at styre et projekt. Når man er i gang md at lave en større projekt, er det en god ide at gemme projektet undervejs. Dette giver muligheden til at være mere kreativ og afprøve forskellige ideer uden at bekymre sig om koden bliver ødelagt. Versionsstyring er en slags tidsmaskine, som giver muligheden til at vende tilbage hvis der opstår en fejl og starte forfra. Derudover kan man holde styr på flere delprojekter og arbejde sammen med andre.</p> 
+           
+        <h3>Hvad bruges versionsstyring til</h3>
+           
+   <p>Versionsstyring bruges i alle slags it-projekter, dvs. apps, frameworks, websites osv. Versionsstyring er udbredt blandt stort set alle, der har med et IT-projekter at gøre. Såsom store og små organisationer, iværksættere, hobby-kodere og forskellige open sourse-projekter. </p>   
+           
+        <h3>Hvorfor versionsstyring</h3>
+           <p>Konceptet bag versionsstyring er simpel: det er en server der gemmer alle gamle versioner af filer. Man behøver ikke være programmør for, at versionsstyring er interessant. Dokumenter og filer der ofte redigeres kan versionsstyres. Det kunne være kontrakter, rapporter, dokumentationer etc.
+<p>Specielt når der er mere end en person der løbende redigerer i en fil, vil der opnås en masse fordele ved at anvende versionsstyring.
+</p>
+         
+
+       
+       
+           
+      <h3>Eksempler på versionsstyringssytem</h3> 
+        
+           <p>Der findes forskellige tjenester for versionsstyringssystemer. Fx BitBucket, GitHub, GitLab og mange andre. De bør nævnes at man skal skelne imellem Git og GitHub. Git er et protokol og program for versionsstyring, hvor GitHub og andre tjenester, er en online database, der hjælper en med at holde styr og dele dine indhold udenfor din komputer på en server.</p>
+           
+           
+      <div id="githubbilled">
+           
+           <img src="github.png" alt="github" height="600" class="responsive">
+           
+     </div>    
+           
+           <h3>Hvad er GitHub</h3>
+           
+           <p>GitHub er en webplatform, der tillader at man opretter en web-repository. Det er klar Git-server, så man ikke selv skal oprette en. GitHub indeholder mulighederne til at styre sine egne projekter og dele dem med andre. Det er er blevet så udbredt, at den kan sammenlignes med en socialmedie for webudviklere. Dette er et sted, hvor mange store og små open source-projekter udvikles, så man kan ruge stedet til at hente nogle stumper af koder til sit egent projekt.</p>
+           
+           
+          <h3>Ordliste</h3> 
+           
+           <ul>
+               <li>Repository (repo) – en projektmappe med alle tilhørende filer i</li>
+                <li>Branch – en parallel version til repo, som ikke berørere master</li>
+               <li>Master Branch – en hovedforløb</li>
+                <li>Commit - en revision, som at gemme, men med mulighed for at finde tilbage</li>
+               <li>Pull Request	 - et forslag til en ny udgave (rettelser)</li>
+               <li>Diff – difference, en forskel mellem to commits</li>
+               <li>Merge - når ændringer i en branch samles med en anden (eks. gennem en pull request)</li>
+               <li>Pull – når du henter ændringer og merger dem</li>
+               
+               
+           </ul>
+           
+    
+    <div class="kilder">
+        
+                <p>(Kilder: https://blog.devmountain.com/git-vs-github-whats-the-difference/  ;<p> Præsentation af Niels Østergaard fra 23/9 2019.)</p>
+           </div>
+           
+           
+       </sektion>
+       
+            
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer> 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           

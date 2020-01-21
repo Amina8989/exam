@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> <!--denne link referer til google material icons-->
+    
+    <title>Typografi</title>
+
+    <link rel="stylesheet" href="typostyle.css">
+    </head>
+
+ <body>
+    
+     <!--navigation-->
+     
+  <nav>
+     <section class="content"> 
+         
+         <h1> <a href="index.html">Læringsportfolio</a> </h1>
+         
+      <section class="links">
+          
+          <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="designthinking.html">Designthinking</a>
+      
+      </section>
+        
+         <!--menu icon-->
+    
+        <i class="material-icons menu" onclick="menu()">menu</i> 
+         
+     </section>
+      
+      <!--dropdown meny-->
+      
+      <section class="dropdown">
+         
+          <a href="farver.html"> Farver</a>
+          <a href="typo.html">Typografi</a>
+          <a href="gestalt.html">Gestaltlovene</a>
+          <a href="designthinking.html">Designthinking</a>
+          
+      </section>
+     
+     </nav>  
+    
+    </body> 
+    
+    <script>
+    
+       var dropdown = document.querySelector("nav .dropdown") 
+       var button = document.querySelector("nav .menu")
+        
+       function menu() {
+           if (dropdown.style.display === "grid") {
+               dropdown.style.display = "none";
+                button.innerHTML = "menu";
+           }
+               else {
+                  dropdown.style.display = "grid";
+                    button.innerHTML = "close"
+               }
+       }
+       
+        addEventListener("resize", function() {
+            if (window.innerWidth > 700) {dropdown.style.display = "none";
+                button.innerHTML = "menu";}
+        } )
+        
+ </script>
+    
+   <!--Mit grid-->
+
+   <section id="mitgrid">
+       
+       <section id="felt1">
+            
+           <h2>Hvad er typografi</h2>
+       
+      <p>Typografi er den visuelle komponent i den skrevne tekst. Typografien betyder en hel del, fordi den hjælper med at bevare læserens opmærksomhed og at skabe et godt afrundet design af dit layout.
+<p>Et bogstavets højde har mindst fem linjer, som den kan justeres til. Disse vandrette linjer er guider for store bogstaver, ascenders, små bogstaver og efterkommere.
+</p> 
+   
+           
+       <div id="typobilled">
+           
+           <img src="typografi.png" alt="php" height="400" class="responsive">
+           
+            </div> 
+       
+           
+           </section>
+       
+       <section id="felt2">
+       
+       
+       
+   <ul>
+           <li>Baseline: Dette er den linje, teksten sidder på.</li>
+            <li>Cap height eller cap line: Dette markerer toppen af store bogstaver.</li>
+            <li>Ascender height eller topline: Denne linje viser, hvor toppen af bogstaverne som k og h berører.</li>
+            <li>X-height eller midline: Dette viser højden på små bogstaver. Det måles typisk ved hjælp af højden på bogstavet x.</li>
+            <li>Descender height eller beardline: Efterkommere er de dele af tegn, der går under basislinjen (f.eks. bogstaverne p og y). Denne linje viser, hvor bundene af decenders er.</li>
+            
+    </ul>    
+       
+      <h3>Leading</h3> 
+       
+       <p>Leading, også kaldet linjehøjde, er en afstand fra en bundlinje til en bundlinje. Er typisk 120-130% af skriftstørrelsen. </p>
+       
+       <h3>Kerning</h3> 
+       
+       <p>Kerning beskriver mængdet af plads mellem to bogstaver.</p>
+       
+       <h3>Tracking</h3> 
+       
+       <p>Overordnet afstand mellem bogstaverne. Kaldes letter-spacing propertie i Css.</p>
+       
+       <h3>Fonklassifikationer</h3> 
+       
+       <div id="typobilled">
+           
+           <img src="serif.png" alt="php" height="400" class="responsive">
+           
+            </div> 
+           
+           
+           </section>
+       
+       <section id="felt3">
+       
+           
+           
+        
+        <h3>Serif eller Antikva</h3>
+       
+       <p>Disse skrifter er forsynet med seriffer, dvs. små vandratte ”fødder” på bogstaverne. Den form kommer fra gamle dage hvor man brugte blæk og mejsel til at skrive med. Nu om dagene giver det mening at bruge serif, fordi den skaber en helhed for læseren. Det giver særlig mening at bruge serif i lange tekster, for den er med til at gruppere bogstaver og giver dem en samlet form. Dermed er det en hjælp for læseren.</p>
+           
+        <h3>Sans serif</h3>   
+           
+        <p>Sans betyder ”uden” på fransk. Så en sans serif-skrift er en skrift uden seriffer.  Dette er et godt valg for korte tekstmængder, som skal fremstår klare og tydelige. Fx vejskilte udføres med skrit af denne type, så man hurtigt kan læse dem.</p>   
+          <h3>Typografisk komposition</h3> 
+           
+           <p>Som designere og dermed problemløsere er det vigtigt at huske at man ikke er en kunstner. Dette betyder at typografien skal først og fremmest bruges til at formidle informationer.  Af samme grund  skal teksten formidles letlæseligt. Der er mange fællestræk mellem dem trykte typografi og den digitale typografi. Men der er et par forhold, der adskiller en traditionelle trykt tekst fra en tekst der indgår i et interface.
+<p>Det første er at vi skal hele tiden forholde os til, at teksten skal kunne fungere på forskellige skærmstørrelser.
+<p>Den anden er brugernes læseradfærd er anderledes på skærm end på papir. Når man læser trykt bog, så laser man fra den førte side og en side af gangen og frem til den sidste side. Denne lineære læsning er karakteristisk for læsning af digital tekster. Her læser man med skimme og multitasker samtidigt. Dvs. evnen til forståelse af teksten er ringere. 
+<p>Derfor er det hensigtsmæssigt at fremstille en skannevenlig tekst, som indebærer følgende triks. 
+</p>
+           
+<ul>
+    <li>Fremhævning af nøgleord i teksten</li> 
+    <li>Meningsfulde mellemrubrikker</li> 
+    <li>Lister i punktform</li> 
+    <li>Korte parafrafer</li> 
+    <li>Tekst er opbygget efter den omvendte pyramide med konklusionen eller hovedbudskabet først</li> 
+    <li>Den samlede tekst skal være begrænset, så sætningerne er korte og præcise.
+</li>       
+           
+ </ul>           
+           
+    <div class="kilder">
+                <p>((Kilder: Interfacedesign, Rold Morten, 1 udgave 2019. ; 
+                    <p>Præsentation fra 3/10 2019 af Carsten Kjeldsen Bogner)
+                </p>
+        
+           </div>
+           
+           
+       </section>
+                 
+           
+    </section> <!--Mit grid-->
+    
+    
+    <footer id="footer">
+        
+        <div id="footertekst">Eksamensprojekt by Aminat Bajsalueva</div>
+        
+    </footer>           
+                   
+           
+           
+           
+           
+           
+           
+           
+           
+       
+       
+       
